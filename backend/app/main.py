@@ -5,6 +5,7 @@ from typing import Any, Dict, List, Optional
 
 from fastapi import FastAPI, File, HTTPException, UploadFile
 from pydantic import BaseModel
+from fastapi.staticfiles import StaticFiles
 from starlette.concurrency import run_in_threadpool
 
 from .analysis import ANALYSIS_METHOD, AudioDecodeError, analyze_file
@@ -13,7 +14,7 @@ from .analysis import ANALYSIS_METHOD, AudioDecodeError, analyze_file
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("footbeat.analysis")
 
-MAX_UPLOAD_BYTES = 100 * 1024 * 1024
+MAX_UPLOAD_BYTES = 25 * 1024 * 1024
 CHUNK_BYTES = 1024 * 1024
 
 app = FastAPI(title="FOOTBEAT Audio Analysis", version="0.1.0")
@@ -62,7 +63,7 @@ async def analyse(file: UploadFile = File(...)):
                         break
                     total_bytes += len(chunk)
                     if total_bytes > MAX_UPLOAD_BYTES:
-                        raise HTTPException(status_code=413, detail="This MP3 is over the 100 MB analysis limit.")
+                        raise HTTPException(status_code=413, detail="This MP3 is over the 25 MB analysis limit.")
                     temporary_file.write(chunk)
 
             if total_bytes == 0:
@@ -93,3 +94,11 @@ async def analyse(file: UploadFile = File(...)):
         raise HTTPException(status_code=500, detail="The uploaded file could not be prepared for analysis.") from exc
     finally:
         await file.close()
+
+
+# In production the frontend is built into the project-level dist/ directory.
+# Local development keeps using Vite, so the mount is only enabled when that
+# build directory exists.
+frontend_dist = Path(__file__).resolve().parents[2] / "dist"
+if frontend_dist.is_dir():
+    app.mount("/", StaticFiles(directory=frontend_dist, html=True), name="frontend")

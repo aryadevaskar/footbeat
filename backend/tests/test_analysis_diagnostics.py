@@ -1,8 +1,10 @@
 import unittest
+from unittest.mock import patch
 
 import numpy as np
 
 from backend.app.analysis_diagnostics import build_beat_diagnostics, estimate_leading_silence
+from backend.app.analysis import AudioDecodeError, MAX_AUDIO_DURATION_SECONDS, analyze_file
 
 
 class BeatDiagnosticTests(unittest.TestCase):
@@ -35,6 +37,13 @@ class BeatDiagnosticTests(unittest.TestCase):
         result = build_beat_diagnostics([], None, 1, 44100, 0, 0, 0, 0, "test")
         self.assertIsNone(result["intervals"]["median_seconds"])
         self.assertEqual(result["intervals"]["count"], 0)
+
+    @patch("backend.app.analysis.librosa.load")
+    @patch("backend.app.analysis.librosa.get_duration", return_value=MAX_AUDIO_DURATION_SECONDS + 0.01)
+    def test_overlong_audio_is_rejected_before_sample_decode(self, _duration, load):
+        with self.assertRaisesRegex(AudioDecodeError, "8 minute"):
+            analyze_file("overlong.mp3")
+        load.assert_not_called()
 
 
 if __name__ == "__main__":

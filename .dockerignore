@@ -1,0 +1,11 @@
+.git
+.gitignore
+.dockerignore
+node_modules
+backend/.venv
+dist
+**/__pycache__
+*.py[cod]
+.env
+.env.*
+!.env.example

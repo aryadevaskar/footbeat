@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: footbeat-aryadevaskar
+    runtime: docker
+    plan: free
+    region: frankfurt
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /api/health
+    autoDeployTrigger: commit

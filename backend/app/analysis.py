@@ -8,6 +8,7 @@ from .analysis_diagnostics import build_beat_diagnostics, estimate_leading_silen
 
 
 HOP_LENGTH = 512
+MAX_AUDIO_DURATION_SECONDS = 8 * 60
 ANALYSIS_METHOD = "librosa onset-strength beat tracking"
 
 
@@ -26,6 +27,15 @@ class AudioDecodeError(Exception):
 
 def analyze_file(path: str) -> AnalysisResult:
     """Decode one temporary audio file and detect beats from its onset signal."""
+    # Check container metadata before decoding samples into memory. This keeps
+    # unusually long uploads from exhausting a small public service instance.
+    try:
+        metadata_duration = float(librosa.get_duration(path=path))
+    except Exception:
+        metadata_duration = None
+    if metadata_duration is not None and np.isfinite(metadata_duration) and metadata_duration > MAX_AUDIO_DURATION_SECONDS:
+        raise AudioDecodeError("This track is longer than the 8 minute rhythm-analysis limit.")
+
     try:
         samples, sample_rate = librosa.load(path, sr=None, mono=True)
     except Exception as exc:
