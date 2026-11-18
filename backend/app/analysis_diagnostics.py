@@ -13,10 +13,11 @@ def estimate_leading_silence(samples: np.ndarray, sample_rate: int) -> Optional[
     if sample_rate <= 0 or samples.size == 0:
         return None
     window_size = max(1, round(sample_rate * 0.05))
-    window_count = int(np.ceil(samples.size / window_size))
-    padded = np.pad(samples.astype(np.float64), (0, window_count * window_size - samples.size))
-    windows = padded.reshape(window_count, window_size)
-    rms = np.sqrt(np.mean(np.square(windows), axis=1))
+    window_rms = []
+    for start in range(0, samples.size, window_size):
+        window = samples[start:start + window_size]
+        window_rms.append(np.sqrt(float(np.dot(window, window)) / window.size))
+    rms = np.asarray(window_rms, dtype=np.float64)
     peak = float(np.max(rms)) if rms.size else 0.0
     threshold = max(1e-5, peak * 0.1)
     active = np.flatnonzero(rms >= threshold)
@@ -33,6 +34,7 @@ def build_beat_diagnostics(
     onset_strength_std: float,
     onset_strength_peak: float,
     librosa_version: str,
+    source_sample_rate: Optional[int] = None,
 ) -> Dict:
     intervals = np.diff(np.asarray(beat_times, dtype=np.float64))
     median_interval = float(np.median(intervals)) if intervals.size else None
@@ -53,13 +55,14 @@ def build_beat_diagnostics(
 
     return {
         "librosa_version": librosa_version,
-        "decoded_sample_rate_hz": sample_rate,
+        "decoded_sample_rate_hz": source_sample_rate or sample_rate,
+        "analysis_sample_rate_hz": sample_rate,
         "analysis_channels": 1,
-        "resampled": False,
+        "resampled": source_sample_rate is not None and source_sample_rate != sample_rate,
         "onset_strength": {
             "function": "librosa.onset.onset_strength",
             "hop_length": 512,
-            "parameters": "librosa defaults: lag=1, max_size=1, center=true, detrend=false; default mel-spectrogram feature",
+            "parameters": "n_fft=1024; other onset parameters use librosa defaults (lag=1, max_size=1, center=true, detrend=false)",
             "mean": onset_strength_mean,
             "standard_deviation": onset_strength_std,
             "peak": onset_strength_peak,

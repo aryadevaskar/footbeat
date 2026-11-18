@@ -1,5 +1,6 @@
 import logging
 import tempfile
+import asyncio
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
@@ -16,6 +17,7 @@ logger = logging.getLogger("footbeat.analysis")
 
 MAX_UPLOAD_BYTES = 25 * 1024 * 1024
 CHUNK_BYTES = 1024 * 1024
+analysis_lock = asyncio.Lock()
 
 app = FastAPI(title="FOOTBEAT Audio Analysis", version="0.1.0")
 
@@ -70,7 +72,8 @@ async def analyse(file: UploadFile = File(...)):
                 raise HTTPException(status_code=400, detail="The selected MP3 is empty.")
 
             try:
-                result = await run_in_threadpool(analyze_file, str(temporary_path))
+                async with analysis_lock:
+                    result = await run_in_threadpool(analyze_file, str(temporary_path))
             except AudioDecodeError as exc:
                 raise HTTPException(status_code=422, detail=str(exc)) from exc
             except Exception as exc:

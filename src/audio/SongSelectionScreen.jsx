@@ -53,7 +53,7 @@ export default function SongSelectionScreen({ track, error, onChooseFile, onCont
       </div>
 
       {error && <p className="audio-message audio-message--error" role="alert">{error}</p>}
-      <p className="local-file-note"><span aria-hidden="true">◇</span> Playback stays in your browser. Rhythm analysis temporarily uploads the track (MP3, up to 25 MB and 8 minutes); the server does not store it.</p>
+      <p className="local-file-note"><span aria-hidden="true">◇</span> Playback stays in your browser. Rhythm analysis temporarily uploads the track (MP3, up to 25 MB and 4 minutes); the server does not store it.</p>
 
       <div className="audio-stage-actions">
         <span className="supported-format">SUPPORTED FORMAT <strong>.MP3</strong></span>

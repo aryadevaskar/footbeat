@@ -32,6 +32,12 @@ class BeatDiagnosticTests(unittest.TestCase):
         result = build_beat_diagnostics([1.2], None, 2, sample_rate, 1.0, 0.2, 0.1, 0.7, "test")
         self.assertTrue(any("were not shifted" in warning for warning in result["warnings"]))
 
+    def test_reports_source_and_analysis_sample_rates(self):
+        result = build_beat_diagnostics([], None, 1, 22050, 0, 0, 0, 0, "test", source_sample_rate=44100)
+        self.assertEqual(result["decoded_sample_rate_hz"], 44100)
+        self.assertEqual(result["analysis_sample_rate_hz"], 22050)
+        self.assertTrue(result["resampled"])
+
     def test_no_intervals_or_silence_are_handled(self):
         self.assertIsNone(estimate_leading_silence(np.zeros(20), 100))
         result = build_beat_diagnostics([], None, 1, 44100, 0, 0, 0, 0, "test")
@@ -41,7 +47,7 @@ class BeatDiagnosticTests(unittest.TestCase):
     @patch("backend.app.analysis.librosa.load")
     @patch("backend.app.analysis.librosa.get_duration", return_value=MAX_AUDIO_DURATION_SECONDS + 0.01)
     def test_overlong_audio_is_rejected_before_sample_decode(self, _duration, load):
-        with self.assertRaisesRegex(AudioDecodeError, "8 minute"):
+        with self.assertRaisesRegex(AudioDecodeError, "4 minute"):
             analyze_file("overlong.mp3")
         load.assert_not_called()
 

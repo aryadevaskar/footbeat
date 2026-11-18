@@ -8,7 +8,9 @@ from .analysis_diagnostics import build_beat_diagnostics, estimate_leading_silen
 
 
 HOP_LENGTH = 512
-MAX_AUDIO_DURATION_SECONDS = 8 * 60
+ANALYSIS_SAMPLE_RATE = 22050
+ONSET_N_FFT = 1024
+MAX_AUDIO_DURATION_SECONDS = 4 * 60
 ANALYSIS_METHOD = "librosa onset-strength beat tracking"
 
 
@@ -34,10 +36,15 @@ def analyze_file(path: str) -> AnalysisResult:
     except Exception:
         metadata_duration = None
     if metadata_duration is not None and np.isfinite(metadata_duration) and metadata_duration > MAX_AUDIO_DURATION_SECONDS:
-        raise AudioDecodeError("This track is longer than the 8 minute rhythm-analysis limit.")
+        raise AudioDecodeError("This track is longer than the 4 minute rhythm-analysis limit.")
 
     try:
-        samples, sample_rate = librosa.load(path, sr=None, mono=True)
+        source_sample_rate = int(librosa.get_samplerate(path))
+    except Exception:
+        source_sample_rate = None
+
+    try:
+        samples, sample_rate = librosa.load(path, sr=ANALYSIS_SAMPLE_RATE, mono=True)
     except Exception as exc:
         raise AudioDecodeError("The file could not be decoded as audio. Try a valid MP3 file.") from exc
 
@@ -49,14 +56,14 @@ def analyze_file(path: str) -> AnalysisResult:
         raise AudioDecodeError("The uploaded audio has no usable duration.")
 
     leading_silence = estimate_leading_silence(samples, sample_rate)
-    rms = float(np.sqrt(np.mean(np.square(samples, dtype=np.float64))))
+    rms = float(np.sqrt(float(np.dot(samples, samples)) / samples.size))
     if not np.isfinite(rms) or rms < 1e-5:
         return AnalysisResult(
             duration=duration,
             estimated_bpm=None,
             beat_times=[],
             warning="This track is nearly silent, so a reliable rhythm could not be detected.",
-            diagnostics=build_beat_diagnostics([], None, duration, sample_rate, leading_silence, 0.0, 0.0, 0.0, librosa.__version__),
+            diagnostics=build_beat_diagnostics([], None, duration, sample_rate, leading_silence, 0.0, 0.0, 0.0, librosa.__version__, source_sample_rate),
         )
 
     try:
@@ -64,6 +71,7 @@ def analyze_file(path: str) -> AnalysisResult:
             y=samples,
             sr=sample_rate,
             hop_length=HOP_LENGTH,
+            n_fft=ONSET_N_FFT,
         )
         if onset_envelope.size < 2:
             return AnalysisResult(
@@ -71,7 +79,7 @@ def analyze_file(path: str) -> AnalysisResult:
                 estimated_bpm=None,
                 beat_times=[],
                 warning="This track is too short or has too little rhythmic detail for reliable beat detection.",
-                diagnostics=build_beat_diagnostics([], None, duration, sample_rate, leading_silence, 0.0, 0.0, 0.0, librosa.__version__),
+                diagnostics=build_beat_diagnostics([], None, duration, sample_rate, leading_silence, 0.0, 0.0, 0.0, librosa.__version__, source_sample_rate),
             )
 
         tempo, beat_frames = librosa.beat.beat_track(
@@ -125,6 +133,7 @@ def analyze_file(path: str) -> AnalysisResult:
         onset_variation,
         onset_peak,
         librosa.__version__,
+        source_sample_rate,
     )
 
     return AnalysisResult(

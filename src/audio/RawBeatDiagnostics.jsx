@@ -89,7 +89,7 @@ function RawBeatDiagnostics({ beatTimes, duration, diagnostics, playheadRef, tra
         <details className="raw-beat-method-details">
           <summary>How this beat track was produced</summary>
           <dl>
-            <div><dt>Decoder sample rate</dt><dd>{diagnostics.decoded_sample_rate_hz} Hz; mono analysis; no resampling</dd></div>
+            <div><dt>Decoder sample rate</dt><dd>{diagnostics.decoded_sample_rate_hz} Hz source; {diagnostics.analysis_sample_rate_hz} Hz mono analysis; {diagnostics.resampled ? 'resampled' : 'no resampling'}.</dd></div>
             <div><dt>Onset signal</dt><dd>{diagnostics.onset_strength?.function}, 512 sample hop; {diagnostics.onset_strength?.parameters}</dd></div>
             <div><dt>Onset envelope level</dt><dd>Mean {Number(diagnostics.onset_strength?.mean ?? 0).toExponential(2)}, standard deviation {Number(diagnostics.onset_strength?.standard_deviation ?? 0).toExponential(2)}, peak {Number(diagnostics.onset_strength?.peak ?? 0).toExponential(2)}.</dd></div>
             <div><dt>Beat tracker</dt><dd>{diagnostics.beat_tracker?.function}, {diagnostics.beat_tracker?.parameters}</dd></div>
