@@ -53,7 +53,7 @@ export default function BeatmapEventList({ steps, selectedStepId, movementStatus
             return (
               <li key={step.id} ref={getItemRef(step.id)}>
                 <button
-                  className={`beatmap-event beatmap-event--${status}${selectedStepId === step.id ? ' is-selected' : ''}`}
+                  className={`beatmap-event beatmap-event--${status} beatmap-event--zone-${step.targetZone}${selectedStepId === step.id ? ' is-selected' : ''}`}
                   type="button"
                   aria-pressed={selectedStepId === step.id}
                   aria-label={`Beat ${step.beatIndex + 1}, ${formatEventTime(step.timestamp)}, ${zone?.foot ?? 'unknown foot'}, ${zone ? `${zone.depth.toLowerCase()} pad` : step.targetZone}, ${statusLabels[status]}`}

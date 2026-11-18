@@ -5,6 +5,7 @@ import './styles/tokens.css';
 import './styles/global.css';
 import './onboarding/onboarding.css';
 import './audio/audio.css';
+import './styles/neo-brutalism.css';
 
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>

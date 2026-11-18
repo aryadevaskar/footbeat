@@ -1,20 +1,28 @@
 :root {
-  font-family: 'Arial', 'Helvetica Neue', sans-serif;
-  color: #f2f0e8;
-  background: #0c0d10;
+  color-scheme: light;
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background: var(--color-bg);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
 
-  --color-bg: #0c0d10;
-  --color-panel: #131519;
-  --color-panel-raised: #191c21;
-  --color-border: #292d33;
-  --color-text: #f2f0e8;
-  --color-muted: #858991;
-  --color-subtle: #555a62;
-  --color-accent: #d8ff52;
-  --color-accent-warm: #ff855c;
-  --font-display: 'Arial Black', 'Arial', sans-serif;
+  --color-bg: #ffdf00;
+  --color-panel: #fff7e6;
+  --color-panel-raised: #ffffff;
+  --color-border: #080808;
+  --color-text: #080808;
+  --color-muted: #39372f;
+  --color-subtle: #625b43;
+  --color-accent: #ffdf00;
+  --color-green: #c8ef2d;
+  --color-pink: #f04436;
+  --color-orange: #f2a900;
+  --color-cyan: #c49cf1;
+  --color-blue: #c49cf1;
+  --color-accent-warm: #f04436;
+  --color-success: #c8ef2d;
+  --font-body: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-display: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --space-1: 0.25rem;
   --space-2: 0.5rem;
   --space-3: 0.75rem;
@@ -23,8 +31,12 @@
   --space-8: 2rem;
   --space-12: 3rem;
   --space-16: 4rem;
-  --radius-sm: 0.45rem;
-  --radius-md: 0.8rem;
-  --radius-lg: 1.25rem;
-  --transition-fast: 160ms ease;
+  --radius-sm: 0.7rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.45rem;
+  --line: 3px solid var(--color-border);
+  --shadow-hard: 6px 6px 0 var(--color-border);
+  --shadow-small: 3px 3px 0 var(--color-border);
+  --shadow-pressed: 1px 1px 0 var(--color-border);
+  --transition-fast: 140ms ease-out;
 }
