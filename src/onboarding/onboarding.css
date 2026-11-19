@@ -25,6 +25,9 @@
 .tutorial-button--primary span { font-size: 1rem; }
 .tutorial-button--secondary { color: #d5d6d2; border-color: #3b4047; background: #171a1f; }
 .tutorial-button--secondary:hover { color: white; border-color: #697142; }
+.welcome-actions { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.explore-session-action { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin-top: 19px; padding: 14px; border: 1px solid #323730; border-radius: var(--radius-md); background: rgba(255,255,255,.025); }
+.explore-session-action p { margin: 0; color: #aeb2a4; font-size: .8rem; }
 .welcome-stage { min-height: 490px; display: grid; grid-template-columns: .9fr 1.1fr; align-items: center; gap: clamp(28px, 6vw, 72px); padding: 42px 0 28px; }
 .welcome-copy { padding: 10px 0 20px; }
 .welcome-visual { min-width: 0; padding-top: 10px; }

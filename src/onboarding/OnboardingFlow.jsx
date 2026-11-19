@@ -12,6 +12,7 @@ import TodayGenreStage from '../session/components/TodayGenreStage.jsx';
 import CuratedSongSelectionStage from '../session/components/CuratedSongSelectionStage.jsx';
 import PreparedSongStage from '../session/components/PreparedSongStage.jsx';
 import { hasCompletedOnboarding, markOnboardingComplete } from './tutorialPersistence.js';
+import ExploreNewcastle from '../explore/ExploreNewcastle.jsx';
 
 const zoneById = Object.fromEntries(zones.map((zone) => [zone.id, zone]));
 
@@ -24,6 +25,7 @@ export default function OnboardingFlow({ session }) {
   const [stepIndex, setStepIndex] = useState(0);
   const [feedback, setFeedback] = useState('');
   const [wrongZone, setWrongZone] = useState(null);
+  const [exploreReturnStage, setExploreReturnStage] = useState('welcome');
   const advanceTimer = useRef(null);
   const exercise = practiceExercises[exerciseIndex];
   const expectedZone = zoneById[exercise.sequence[Math.min(stepIndex, exercise.sequence.length - 1)]];
@@ -122,7 +124,7 @@ export default function OnboardingFlow({ session }) {
 
   let stageContent;
   if (stage === 'welcome') {
-    stageContent = <WelcomeStage onBegin={() => setStage('understand')} />;
+    stageContent = <WelcomeStage onBegin={() => setStage('understand')} onExplore={() => { setExploreReturnStage('welcome'); setStage('explore'); }} />;
   } else if (stage === 'understand') {
     stageContent = <UnderstandingStage onContinue={() => { setZoneIndex(0); setStage('zones'); }} />;
   } else if (stage === 'zones') {
@@ -168,7 +170,16 @@ export default function OnboardingFlow({ session }) {
       />
     );
   } else if (stage === 'preparation' && session && selectedSong) {
-    stageContent = <PreparedSongStage song={selectedSong} bench={session.bench} onBack={() => setStage('catalogue')} />;
+    stageContent = (
+      <PreparedSongStage
+        song={selectedSong}
+        bench={session.bench}
+        onBack={() => setStage('catalogue')}
+        onExplore={() => { setExploreReturnStage('preparation'); setStage('explore'); }}
+      />
+    );
+  } else if (stage === 'explore') {
+    stageContent = <ExploreNewcastle onBack={() => setStage(exploreReturnStage)} />;
   } else if (stage === 'song') {
     stageContent = <p className="audio-message">Continue with a bench QR code to select today’s songs.</p>;
   }

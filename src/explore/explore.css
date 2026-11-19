@@ -1,0 +1,57 @@
+.explore-stage { max-width: 1160px; margin: 0 auto; }
+.explore-back { margin-bottom: 1.4rem; }
+.explore-heading { max-width: 650px; margin-bottom: 1.5rem; }
+.explore-heading h1 { margin: .3rem 0 .8rem; font-size: clamp(2.7rem, 6vw, 5rem); line-height: .9; }
+.explore-heading h1 span { color: var(--color-pink); }
+.explore-heading .stage-lede { max-width: 38rem; margin-top: .5rem; }
+.explore-layout { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(250px, .85fr); gap: 1.25rem; align-items: stretch; }
+.explore-map-column { min-width: 0; }
+.explore-map-legend { display: flex; flex-wrap: wrap; gap: .65rem 1rem; margin-bottom: .7rem; color: var(--color-text); font-size: .76rem; font-weight: 800; }
+.explore-map-legend span { display: inline-flex; align-items: center; gap: .45rem; }
+.explore-marker-swatch { width: 14px; height: 14px; display: inline-block; border: 2px solid var(--color-border); box-shadow: 2px 2px 0 var(--color-border); }
+.explore-marker-swatch--bench { border-radius: 50%; background: var(--color-accent); }
+.explore-marker-swatch--venue { transform: rotate(45deg); background: var(--color-pink); }
+.explore-schematic { position: relative; isolation: isolate; min-height: 390px; overflow: hidden; border: var(--line); border-radius: var(--radius-lg); background-color: var(--color-panel); background-image: radial-gradient(rgba(8,8,8,.18) 1px, transparent 1.4px); background-size: 15px 15px; box-shadow: var(--shadow-hard); }
+.explore-schematic::before { position: absolute; inset: 8% 5%; z-index: -1; border: 2px solid rgba(8,8,8,.16); border-radius: 42% 35% 44% 36%; content: ''; transform: rotate(-7deg); }
+.explore-map-lines { position: absolute; inset: 5%; width: 90%; height: 90%; overflow: visible; pointer-events: none; }
+.explore-map-lines path { fill: none; stroke: rgba(8,8,8,.22); stroke-width: 1.2; stroke-dasharray: 2.2 2.3; vector-effect: non-scaling-stroke; }
+.explore-district-label { position: absolute; color: rgba(8,8,8,.53); font-size: .57rem; font-weight: 900; letter-spacing: .13em; pointer-events: none; }
+.explore-district-label--centre { top: 43%; left: 38%; }
+.explore-district-label--quayside { right: 5%; bottom: 13%; transform: rotate(-13deg); }
+.explore-district-label--ouseburn { left: 5%; bottom: 12%; transform: rotate(-18deg); }
+.explore-map-marker { position: absolute; top: var(--marker-y); left: var(--marker-x); display: grid; justify-items: center; gap: .25rem; max-width: 120px; padding: 0; border: 0; color: var(--color-border); background: transparent; cursor: pointer; transform: translate(-50%, -50%); }
+.explore-map-marker-icon { width: 37px; height: 37px; display: grid; place-items: center; border: 3px solid var(--color-border); border-radius: 50%; color: var(--color-border); background: var(--color-accent); box-shadow: 3px 3px 0 var(--color-border); font-size: .9rem; font-weight: 950; transition: transform var(--transition-fast), box-shadow var(--transition-fast); }
+.explore-map-marker--venue .explore-map-marker-icon { border-radius: 5px; background: var(--color-pink); transform: rotate(45deg); }
+.explore-map-marker--venue .explore-map-marker-icon::first-letter { transform: rotate(-45deg); }
+.explore-map-marker-label { max-width: 120px; padding: .2rem .35rem; border: 1px solid var(--color-border); border-radius: 4px; color: var(--color-border); background: var(--color-panel-raised); box-shadow: 2px 2px 0 var(--color-border); font-size: .58rem; font-weight: 850; line-height: 1.2; text-align: center; }
+.explore-map-marker:hover .explore-map-marker-icon, .explore-map-marker.is-selected .explore-map-marker-icon { z-index: 2; transform: translateY(-3px) scale(1.08); box-shadow: 4px 5px 0 var(--color-border); }
+.explore-map-marker--venue:hover .explore-map-marker-icon, .explore-map-marker--venue.is-selected .explore-map-marker-icon { transform: rotate(45deg) translateY(-3px) scale(1.08); }
+.explore-map-marker:focus-visible { outline: 3px solid var(--color-border); outline-offset: 5px; border-radius: 8px; }
+.explore-map-disclaimer { max-width: 670px; margin: .75rem 0 0; color: var(--color-muted); font-size: .68rem; line-height: 1.5; }
+.explore-location-card { min-width: 0; padding: clamp(1rem, 2vw, 1.5rem); border: var(--line); border-radius: var(--radius-lg); color: var(--color-text); background: var(--color-panel-raised); box-shadow: var(--shadow-hard); }
+.explore-location-card h2 { margin: .35rem 0 .15rem; font-size: clamp(1.4rem, 2.6vw, 2rem); line-height: 1.02; overflow-wrap: anywhere; }
+.explore-location-card p { color: var(--color-muted); font-size: .83rem; line-height: 1.55; }
+.explore-card-location { margin-top: .2rem; font-weight: 750; }
+.explore-today-genre { display: flex; align-items: center; justify-content: space-between; gap: .8rem; margin: 1rem 0; padding: .7rem; border: 2px solid var(--color-border); border-radius: var(--radius-sm); background: var(--color-green); }
+.explore-today-genre span { font-size: .62rem; font-weight: 900; letter-spacing: .1em; }
+.explore-today-genre strong { text-transform: capitalize; }
+.explore-tags { display: flex; flex-wrap: wrap; gap: .4rem; margin: .8rem 0; }
+.explore-tags span { padding: .3rem .55rem; border: 2px solid var(--color-border); border-radius: 999px; color: var(--color-border); background: var(--color-cyan); font-size: .69rem; font-weight: 850; }
+.explore-offer { padding: .7rem; border-left: 4px solid var(--color-orange); background: var(--color-panel); }
+.explore-sample-note { padding-top: .7rem; border-top: 1px solid rgba(8,8,8,.2); font-size: .7rem !important; font-weight: 850; }
+.explore-location-card .tutorial-button { width: 100%; margin-top: .65rem; text-decoration: none; }
+.explore-location-card--empty { display: flex; flex-direction: column; justify-content: center; min-height: 220px; border-style: dashed; box-shadow: var(--shadow-small); }
+.explore-location-card--empty h2 { font-size: 1.7rem; }
+@media (max-width: 720px) {
+  .explore-layout { grid-template-columns: 1fr; }
+  .explore-schematic { min-height: clamp(330px, 92vw, 430px); }
+  .explore-location-card { min-height: 0; }
+}
+@media (max-width: 420px) {
+  .explore-stage { padding-inline: .15rem; }
+  .explore-heading h1 { font-size: clamp(2.5rem, 13vw, 3.5rem); }
+  .explore-map-marker { max-width: 96px; }
+  .explore-map-marker-label { max-width: 96px; font-size: .53rem; }
+  .explore-map-marker-icon { width: 33px; height: 33px; }
+  .explore-district-label { font-size: .48rem; }
+}

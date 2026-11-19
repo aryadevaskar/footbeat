@@ -7,6 +7,7 @@ import './onboarding/onboarding.css';
 import './audio/audio.css';
 import './session/publicSession.css';
 import './styles/neo-brutalism.css';
+import './explore/explore.css';
 
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>

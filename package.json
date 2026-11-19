@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "node scripts/dev.js",
     "build": "vite build",
-    "test": "node --test src/choreography/*.test.js src/audio/*.test.js src/session/*.test.js src/catalogue/*.test.js src/benches/*.test.js src/onboarding/*.test.js src/*.test.js",
+    "test": "node --test src/choreography/*.test.js src/audio/*.test.js src/session/*.test.js src/catalogue/*.test.js src/benches/*.test.js src/onboarding/*.test.js src/explore/*.test.js src/*.test.js",
     "preview": "vite preview",
     "qr:benches": "node scripts/generate-bench-qrs.js"
   },

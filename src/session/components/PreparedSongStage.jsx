@@ -4,7 +4,7 @@ import useAudioPlayer from '../../audio/useAudioPlayer.js';
 import { checkPreparedSongAssets, loadPreparedBeatmap } from '../../catalogue/prepareSong.js';
 import LiveGameplayCue from './LiveGameplayCue.jsx';
 
-export default function PreparedSongStage({ song, bench, onBack }) {
+export default function PreparedSongStage({ song, bench, onBack, onExplore }) {
   const playback = useAudioPlayer(song.audioAssetPath);
   const { togglePlayback, audioRef } = playback;
   const [assetState, setAssetState] = useState({ status: 'loading', beatmap: null, error: '' });
@@ -82,6 +82,12 @@ export default function PreparedSongStage({ song, bench, onBack }) {
           </TutorialButton>
         )}
       </div>
+      {phase === 'playing' && playback.status === 'ended' && (
+        <div className="explore-session-action">
+          <p>The session is complete. Take a look around Newcastle.</p>
+          <TutorialButton variant="secondary" onClick={onExplore}>Explore Newcastle</TutorialButton>
+        </div>
+      )}
     </section>
   );
 }
