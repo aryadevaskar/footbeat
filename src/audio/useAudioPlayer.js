@@ -18,10 +18,10 @@ export default function useAudioPlayer(file) {
       return undefined;
     }
 
-    let objectUrl;
+    let objectUrl = null;
     let audio;
     try {
-      objectUrl = URL.createObjectURL(file);
+      if (typeof file !== 'string') objectUrl = URL.createObjectURL(file);
       audio = new Audio();
     } catch {
       if (objectUrl) URL.revokeObjectURL(objectUrl);
@@ -62,7 +62,7 @@ export default function useAudioPlayer(file) {
     audio.addEventListener('pause', onPause);
     audio.addEventListener('ended', onEnded);
     audio.addEventListener('error', onError);
-    audio.src = objectUrl;
+    audio.src = typeof file === 'string' ? file : objectUrl;
     audio.load();
 
     return () => {
@@ -78,7 +78,7 @@ export default function useAudioPlayer(file) {
       audio.removeAttribute('src');
       audio.load();
       if (audioRef.current === audio) audioRef.current = null;
-      URL.revokeObjectURL(objectUrl);
+      if (objectUrl) URL.revokeObjectURL(objectUrl);
     };
   }, [file]);
 

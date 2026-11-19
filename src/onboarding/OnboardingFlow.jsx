@@ -2,18 +2,23 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { zones } from '../data/zones.js';
 import CompletionStage from './components/CompletionStage.jsx';
 import PracticeStage from './components/PracticeStage.jsx';
-import SongExperience from '../audio/SongExperience.jsx';
 import TutorialProgress from './components/TutorialProgress.jsx';
 import UnderstandingStage from './components/UnderstandingStage.jsx';
 import WelcomeStage from './components/WelcomeStage.jsx';
 import ZoneLessonStage from './components/ZoneLessonStage.jsx';
 import { practiceExercises, tutorialStages } from './data/tutorial.js';
 import usePracticeInput from './hooks/usePracticeInput.js';
+import TodayGenreStage from '../session/components/TodayGenreStage.jsx';
+import CuratedSongSelectionStage from '../session/components/CuratedSongSelectionStage.jsx';
+import PreparedSongStage from '../session/components/PreparedSongStage.jsx';
+import { hasCompletedOnboarding, markOnboardingComplete } from './tutorialPersistence.js';
 
 const zoneById = Object.fromEntries(zones.map((zone) => [zone.id, zone]));
 
-export default function OnboardingFlow() {
-  const [stage, setStage] = useState('welcome');
+export default function OnboardingFlow({ session }) {
+  const [stage, setStage] = useState(() => (
+    session?.bench?.id && hasCompletedOnboarding(session.bench.id) ? 'genre' : 'welcome'
+  ));
   const [zoneIndex, setZoneIndex] = useState(0);
   const [exerciseIndex, setExerciseIndex] = useState(0);
   const [stepIndex, setStepIndex] = useState(0);
@@ -106,16 +111,14 @@ export default function OnboardingFlow() {
     setWrongZone(null);
   };
 
+  const [selectedSong, setSelectedSong] = useState(null);
+  useEffect(() => {
+    if (stage === 'complete' && session?.bench?.id) markOnboardingComplete(session.bench.id);
+  }, [stage, session?.bench?.id]);
+
   const visibleStage = stage === 'song' ? 'complete' : stage;
   const stageNumber = tutorialStages.findIndex((item) => item.id === visibleStage) + 1;
-
-  if (stage === 'song') {
-    return (
-      <div className="onboarding-shell">
-        <SongExperience onBack={() => setStage('complete')} />
-      </div>
-    );
-  }
+  const isTutorialStage = tutorialStages.some((item) => item.id === stage);
 
   let stageContent;
   if (stage === 'welcome') {
@@ -151,13 +154,31 @@ export default function OnboardingFlow() {
       />
     );
   } else if (stage === 'complete') {
-    stageContent = <CompletionStage onChooseSong={() => setStage('song')} />;
+    stageContent = <CompletionStage onChooseSong={() => setStage(session ? 'genre' : 'song')} />;
+  } else if (stage === 'genre' && session) {
+    stageContent = <TodayGenreStage session={session} onContinue={() => setStage('catalogue')} onBack={() => setStage('complete')} />;
+  } else if (stage === 'catalogue' && session) {
+    stageContent = (
+      <CuratedSongSelectionStage
+        session={session}
+        selectedSongId={selectedSong?.id}
+        onSelect={setSelectedSong}
+        onContinue={() => { if (selectedSong) setStage('preparation'); }}
+        onBack={() => setStage('genre')}
+      />
+    );
+  } else if (stage === 'preparation' && session && selectedSong) {
+    stageContent = <PreparedSongStage song={selectedSong} bench={session.bench} onBack={() => setStage('catalogue')} />;
+  } else if (stage === 'song') {
+    stageContent = <p className="audio-message">Continue with a bench QR code to select today’s songs.</p>;
   }
 
   return (
     <div className="onboarding-shell">
-      <TutorialProgress current={stage} onSelect={selectStage} />
-      <div className="stage-meta"><span>YOUR FIRST SESSION</span><span>{String(stageNumber).padStart(2, '0')} <i>/</i> 05</span></div>
+      {isTutorialStage && <>
+        <TutorialProgress current={stage} onSelect={selectStage} />
+        <div className="stage-meta"><span>YOUR FIRST SESSION</span><span>{String(stageNumber).padStart(2, '0')} <i>/</i> 05</span></div>
+      </>}
       <div className="stage-content" key={stage}>
         {stageContent}
       </div>

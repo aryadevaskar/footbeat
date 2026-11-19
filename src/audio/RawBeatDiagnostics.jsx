@@ -7,6 +7,8 @@ function RawBeatDiagnostics({ beatTimes, duration, diagnostics, playheadRef, tra
   const summary = useMemo(() => getBeatIntervalSummary(beatTimes), [beatTimes]);
   const intervalDiagnostics = diagnostics?.intervals;
   const warnings = diagnostics?.warnings ?? [];
+  const activityRanges = diagnostics?.activity_ranges_seconds ?? [];
+  const discardedBeatTimes = diagnostics?.discarded_beat_times ?? [];
 
   const seekFromPointer = (event) => {
     if (!canSeek || !duration) return;
@@ -94,8 +96,10 @@ function RawBeatDiagnostics({ beatTimes, duration, diagnostics, playheadRef, tra
             <div><dt>Onset envelope level</dt><dd>Mean {Number(diagnostics.onset_strength?.mean ?? 0).toExponential(2)}, standard deviation {Number(diagnostics.onset_strength?.standard_deviation ?? 0).toExponential(2)}, peak {Number(diagnostics.onset_strength?.peak ?? 0).toExponential(2)}.</dd></div>
             <div><dt>Beat tracker</dt><dd>{diagnostics.beat_tracker?.function}, {diagnostics.beat_tracker?.parameters}</dd></div>
             <div><dt>Timestamp conversion</dt><dd>{diagnostics.timestamp_conversion}; no shift applied</dd></div>
-            <div><dt>Estimated leading silence</dt><dd>{diagnostics.estimated_leading_silence_seconds == null ? 'No clear audio activity threshold crossing was detected.' : `${Number(diagnostics.estimated_leading_silence_seconds).toFixed(2)} seconds. It was not trimmed or compensated.`}</dd></div>
-            <div><dt>Detected range</dt><dd>{diagnostics.first_detected_beat_seconds == null ? 'No beats detected.' : `${Number(diagnostics.first_detected_beat_seconds).toFixed(3)} s to ${Number(diagnostics.last_detected_beat_seconds).toFixed(3)} s from the file start.`}</dd></div>
+            <div><dt>Estimated leading silence</dt><dd>{diagnostics.estimated_leading_silence_seconds == null ? 'No clear audio activity threshold crossing was detected.' : `${Number(diagnostics.estimated_leading_silence_seconds).toFixed(2)} seconds. Earlier detections are filtered; retained beat times stay relative to the file start.`}</dd></div>
+            <div><dt>Audio activity range</dt><dd>{activityRanges.length ? activityRanges.map(([start, end]) => `${Number(start).toFixed(2)}–${Number(end).toFixed(2)} s`).join('; ') : 'No meaningful signal activity detected.'} (adaptive RMS threshold {diagnostics.activity_threshold_rms == null ? 'unavailable' : Number(diagnostics.activity_threshold_rms).toExponential(2)}).</dd></div>
+            <div><dt>Discarded beat detections</dt><dd>{discardedBeatTimes.length ? discardedBeatTimes.map((timestamp) => `${Number(timestamp).toFixed(3)} s`).join(', ') : 'None.'}</dd></div>
+            <div><dt>Detected beat range</dt><dd>{diagnostics.first_detected_beat_seconds == null ? 'No beats detected.' : `${Number(diagnostics.first_detected_beat_seconds).toFixed(3)} s to ${Number(diagnostics.last_detected_beat_seconds).toFixed(3)} s from the file start.`}</dd></div>
             <div><dt>Downbeat detection</dt><dd>Not performed; the first detected beat is not assumed to be beat one of a bar.</dd></div>
             <div><dt>Analysis library</dt><dd>librosa {diagnostics.librosa_version}</dd></div>
           </dl>

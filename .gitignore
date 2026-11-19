@@ -1,5 +1,6 @@
 node_modules/
 dist/
+artifacts/
 backend/.venv/
 **/__pycache__/
 *.py[cod]

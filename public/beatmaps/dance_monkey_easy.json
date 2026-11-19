@@ -1,0 +1,2214 @@
+{
+  "version": 1,
+  "difficulty": "easy",
+  "duration": 209.0028117913832,
+  "estimatedBpm": 99.38,
+  "beatCount": 338,
+  "beatTimes": [
+    1.671837,
+    2.298776,
+    2.902494,
+    3.506213,
+    4.133152,
+    4.736871,
+    5.34059,
+    5.967528,
+    6.571247,
+    7.198186,
+    7.801905,
+    8.405624,
+    9.032562,
+    9.659501,
+    10.26322,
+    10.866939,
+    11.470658,
+    12.074376,
+    12.701315,
+    13.305034,
+    13.931973,
+    14.535692,
+    15.13941,
+    15.696689,
+    16.230748,
+    16.811247,
+    17.322086,
+    17.902585,
+    18.506304,
+    19.133243,
+    19.736961,
+    20.34068,
+    20.967619,
+    21.571338,
+    22.198277,
+    22.801995,
+    23.336054,
+    23.893333,
+    24.497052,
+    25.147211,
+    25.72771,
+    26.401088,
+    27.074467,
+    27.678186,
+    28.281905,
+    28.978503,
+    29.628662,
+    30.255601,
+    30.85932,
+    31.463039,
+    32.089977,
+    32.693696,
+    33.320635,
+    33.901134,
+    34.528073,
+    35.155011,
+    35.75873,
+    36.362449,
+    36.989388,
+    37.593107,
+    38.220045,
+    38.823764,
+    39.427483,
+    40.054422,
+    40.658141,
+    41.261859,
+    41.865578,
+    42.492517,
+    43.096236,
+    43.723175,
+    44.326893,
+    44.953832,
+    45.557551,
+    46.16127,
+    46.788209,
+    47.415147,
+    48.018866,
+    48.622585,
+    49.226304,
+    49.830023,
+    50.456961,
+    51.06068,
+    51.664399,
+    52.291338,
+    52.895057,
+    53.498776,
+    54.125714,
+    54.729433,
+    55.263492,
+    55.960091,
+    56.56381,
+    57.190748,
+    57.794467,
+    58.398186,
+    59.025125,
+    59.628844,
+    60.255782,
+    60.859501,
+    61.46322,
+    62.090159,
+    62.693878,
+    63.297596,
+    63.924535,
+    64.505034,
+    65.131973,
+    65.758912,
+    66.36263,
+    66.989569,
+    67.593288,
+    68.197007,
+    68.823946,
+    69.427664,
+    70.054603,
+    70.658322,
+    71.285261,
+    71.88898,
+    72.492698,
+    73.073197,
+    73.630476,
+    74.257415,
+    74.861134,
+    75.557732,
+    76.184671,
+    76.78839,
+    77.392109,
+    78.019048,
+    78.622766,
+    79.226485,
+    79.830204,
+    80.457143,
+    81.060862,
+    81.66458,
+    82.198639,
+    82.755918,
+    83.359637,
+    84.033016,
+    84.659955,
+    85.286893,
+    85.960272,
+    86.587211,
+    87.19093,
+    87.817868,
+    88.421587,
+    89.025306,
+    89.652245,
+    90.255964,
+    90.859683,
+    91.463401,
+    92.09034,
+    92.694059,
+    93.320998,
+    93.924717,
+    94.528435,
+    95.155374,
+    95.735873,
+    96.362812,
+    96.989751,
+    97.593469,
+    98.197188,
+    98.824127,
+    99.427846,
+    100.054785,
+    100.658503,
+    101.262222,
+    101.889161,
+    102.49288,
+    103.096599,
+    103.723537,
+    104.327256,
+    104.930975,
+    105.534694,
+    106.161633,
+    106.788571,
+    107.39229,
+    107.996009,
+    108.622948,
+    109.226667,
+    109.853605,
+    110.457324,
+    111.061043,
+    111.664762,
+    112.291701,
+    112.89542,
+    113.499138,
+    114.126077,
+    114.729796,
+    115.356735,
+    115.960454,
+    116.564172,
+    117.191111,
+    117.77161,
+    118.421769,
+    119.025488,
+    119.629206,
+    120.256145,
+    120.859864,
+    121.463583,
+    122.090522,
+    122.69424,
+    123.297959,
+    123.924898,
+    124.528617,
+    125.155556,
+    125.759274,
+    126.362993,
+    126.989932,
+    127.593651,
+    128.19737,
+    128.824308,
+    129.428027,
+    130.031746,
+    130.658685,
+    131.262404,
+    131.889342,
+    132.493061,
+    133.09678,
+    133.723719,
+    134.327438,
+    134.954376,
+    135.558095,
+    136.161814,
+    136.788753,
+    137.392472,
+    137.99619,
+    138.623129,
+    139.226848,
+    139.830567,
+    140.457506,
+    141.061224,
+    141.664943,
+    142.291882,
+    142.895601,
+    143.52254,
+    144.126259,
+    144.729977,
+    145.356916,
+    145.960635,
+    146.564354,
+    147.168073,
+    147.795011,
+    148.42195,
+    149.025669,
+    149.652608,
+    150.256327,
+    150.883265,
+    151.486984,
+    152.090703,
+    152.694422,
+    153.321361,
+    153.925079,
+    154.528798,
+    155.155737,
+    155.759456,
+    156.363175,
+    156.990113,
+    157.593832,
+    158.220771,
+    158.82449,
+    159.451429,
+    160.055147,
+    160.658866,
+    161.262585,
+    161.866304,
+    162.493243,
+    163.120181,
+    163.7239,
+    164.327619,
+    164.931338,
+    165.558277,
+    166.161995,
+    166.742494,
+    167.392653,
+    167.996372,
+    168.623311,
+    169.227029,
+    169.830748,
+    170.457687,
+    171.061406,
+    171.665125,
+    172.292063,
+    172.895782,
+    173.522721,
+    174.12644,
+    174.730159,
+    175.333878,
+    175.960816,
+    176.564535,
+    177.191474,
+    177.795193,
+    178.422132,
+    179.02585,
+    179.629569,
+    180.256508,
+    180.860227,
+    181.463946,
+    182.090884,
+    182.694603,
+    183.321542,
+    183.925261,
+    184.52898,
+    185.109478,
+    185.759637,
+    186.363356,
+    186.990295,
+    187.594014,
+    188.220952,
+    188.824671,
+    189.42839,
+    190.055329,
+    190.659048,
+    191.262766,
+    191.889705,
+    192.493424,
+    193.097143,
+    193.724082,
+    194.3278,
+    194.931519,
+    195.558458,
+    196.162177,
+    196.789116,
+    197.392834,
+    197.996553,
+    198.623492,
+    199.227211,
+    199.83093,
+    200.457868,
+    201.084807,
+    201.688526,
+    202.292245,
+    202.895964,
+    203.499683,
+    204.126621,
+    204.70712,
+    205.357279,
+    205.960998,
+    206.564717,
+    207.168435,
+    207.772154
+  ],
+  "steps": [
+    {
+      "id": "step-0001",
+      "timestamp": 1.671837,
+      "targetZone": "right-front",
+      "beatIndex": 0,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0002",
+      "timestamp": 2.298776,
+      "targetZone": "left-front",
+      "beatIndex": 1,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0003",
+      "timestamp": 2.902494,
+      "targetZone": "right-back",
+      "beatIndex": 2,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0004",
+      "timestamp": 3.506213,
+      "targetZone": "left-back",
+      "beatIndex": 3,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0006",
+      "timestamp": 4.736871,
+      "targetZone": "right-front",
+      "beatIndex": 5,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0007",
+      "timestamp": 5.34059,
+      "targetZone": "left-front",
+      "beatIndex": 6,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0008",
+      "timestamp": 5.967528,
+      "targetZone": "right-back",
+      "beatIndex": 7,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0009",
+      "timestamp": 6.571247,
+      "targetZone": "left-front",
+      "beatIndex": 8,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0011",
+      "timestamp": 7.801905,
+      "targetZone": "right-front",
+      "beatIndex": 10,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0012",
+      "timestamp": 8.405624,
+      "targetZone": "left-back",
+      "beatIndex": 11,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0013",
+      "timestamp": 9.032562,
+      "targetZone": "right-front",
+      "beatIndex": 12,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0015",
+      "timestamp": 10.26322,
+      "targetZone": "left-front",
+      "beatIndex": 14,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0016",
+      "timestamp": 10.866939,
+      "targetZone": "right-front",
+      "beatIndex": 15,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0017",
+      "timestamp": 11.470658,
+      "targetZone": "left-back",
+      "beatIndex": 16,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0018",
+      "timestamp": 12.074376,
+      "targetZone": "right-back",
+      "beatIndex": 17,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0020",
+      "timestamp": 13.305034,
+      "targetZone": "left-front",
+      "beatIndex": 19,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0021",
+      "timestamp": 13.931973,
+      "targetZone": "right-front",
+      "beatIndex": 20,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0022",
+      "timestamp": 14.535692,
+      "targetZone": "left-back",
+      "beatIndex": 21,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0023",
+      "timestamp": 15.13941,
+      "targetZone": "right-front",
+      "beatIndex": 22,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0025",
+      "timestamp": 16.230748,
+      "targetZone": "left-front",
+      "beatIndex": 24,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0026",
+      "timestamp": 16.811247,
+      "targetZone": "right-back",
+      "beatIndex": 25,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0027",
+      "timestamp": 17.322086,
+      "targetZone": "left-back",
+      "beatIndex": 26,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0029",
+      "timestamp": 18.506304,
+      "targetZone": "right-front",
+      "beatIndex": 28,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0030",
+      "timestamp": 19.133243,
+      "targetZone": "left-back",
+      "beatIndex": 29,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0031",
+      "timestamp": 19.736961,
+      "targetZone": "right-back",
+      "beatIndex": 30,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0032",
+      "timestamp": 20.34068,
+      "targetZone": "left-front",
+      "beatIndex": 31,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0034",
+      "timestamp": 21.571338,
+      "targetZone": "right-front",
+      "beatIndex": 33,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0035",
+      "timestamp": 22.198277,
+      "targetZone": "left-back",
+      "beatIndex": 34,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0036",
+      "timestamp": 22.801995,
+      "targetZone": "right-front",
+      "beatIndex": 35,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0037",
+      "timestamp": 23.336054,
+      "targetZone": "left-front",
+      "beatIndex": 36,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0039",
+      "timestamp": 24.497052,
+      "targetZone": "right-front",
+      "beatIndex": 38,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0040",
+      "timestamp": 25.147211,
+      "targetZone": "left-back",
+      "beatIndex": 39,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0041",
+      "timestamp": 25.72771,
+      "targetZone": "right-back",
+      "beatIndex": 40,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0043",
+      "timestamp": 27.074467,
+      "targetZone": "left-front",
+      "beatIndex": 42,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0044",
+      "timestamp": 27.678186,
+      "targetZone": "right-front",
+      "beatIndex": 43,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0045",
+      "timestamp": 28.281905,
+      "targetZone": "left-back",
+      "beatIndex": 44,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0046",
+      "timestamp": 28.978503,
+      "targetZone": "right-front",
+      "beatIndex": 45,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0048",
+      "timestamp": 30.255601,
+      "targetZone": "left-front",
+      "beatIndex": 47,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0049",
+      "timestamp": 30.85932,
+      "targetZone": "right-back",
+      "beatIndex": 48,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0050",
+      "timestamp": 31.463039,
+      "targetZone": "left-front",
+      "beatIndex": 49,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0051",
+      "timestamp": 32.089977,
+      "targetZone": "right-front",
+      "beatIndex": 50,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0053",
+      "timestamp": 33.320635,
+      "targetZone": "left-back",
+      "beatIndex": 52,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0054",
+      "timestamp": 33.901134,
+      "targetZone": "right-front",
+      "beatIndex": 53,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0055",
+      "timestamp": 34.528073,
+      "targetZone": "left-front",
+      "beatIndex": 54,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0057",
+      "timestamp": 35.75873,
+      "targetZone": "right-front",
+      "beatIndex": 56,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0058",
+      "timestamp": 36.362449,
+      "targetZone": "left-back",
+      "beatIndex": 57,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0059",
+      "timestamp": 36.989388,
+      "targetZone": "right-back",
+      "beatIndex": 58,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0060",
+      "timestamp": 37.593107,
+      "targetZone": "left-back",
+      "beatIndex": 59,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0062",
+      "timestamp": 38.823764,
+      "targetZone": "right-front",
+      "beatIndex": 61,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0063",
+      "timestamp": 39.427483,
+      "targetZone": "left-front",
+      "beatIndex": 62,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0064",
+      "timestamp": 40.054422,
+      "targetZone": "right-back",
+      "beatIndex": 63,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0065",
+      "timestamp": 40.658141,
+      "targetZone": "left-back",
+      "beatIndex": 64,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0067",
+      "timestamp": 41.865578,
+      "targetZone": "right-front",
+      "beatIndex": 66,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0068",
+      "timestamp": 42.492517,
+      "targetZone": "left-back",
+      "beatIndex": 67,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0069",
+      "timestamp": 43.096236,
+      "targetZone": "right-back",
+      "beatIndex": 68,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0071",
+      "timestamp": 44.326893,
+      "targetZone": "left-front",
+      "beatIndex": 70,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0072",
+      "timestamp": 44.953832,
+      "targetZone": "right-front",
+      "beatIndex": 71,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0073",
+      "timestamp": 45.557551,
+      "targetZone": "left-front",
+      "beatIndex": 72,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0074",
+      "timestamp": 46.16127,
+      "targetZone": "right-back",
+      "beatIndex": 73,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0076",
+      "timestamp": 47.415147,
+      "targetZone": "left-back",
+      "beatIndex": 75,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0077",
+      "timestamp": 48.018866,
+      "targetZone": "right-front",
+      "beatIndex": 76,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0078",
+      "timestamp": 48.622585,
+      "targetZone": "left-front",
+      "beatIndex": 77,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0079",
+      "timestamp": 49.226304,
+      "targetZone": "right-back",
+      "beatIndex": 78,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0081",
+      "timestamp": 50.456961,
+      "targetZone": "left-front",
+      "beatIndex": 80,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0082",
+      "timestamp": 51.06068,
+      "targetZone": "right-front",
+      "beatIndex": 81,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0083",
+      "timestamp": 51.664399,
+      "targetZone": "left-back",
+      "beatIndex": 82,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0085",
+      "timestamp": 52.895057,
+      "targetZone": "right-back",
+      "beatIndex": 84,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0086",
+      "timestamp": 53.498776,
+      "targetZone": "left-front",
+      "beatIndex": 85,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0087",
+      "timestamp": 54.125714,
+      "targetZone": "right-back",
+      "beatIndex": 86,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0088",
+      "timestamp": 54.729433,
+      "targetZone": "left-back",
+      "beatIndex": 87,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0090",
+      "timestamp": 55.960091,
+      "targetZone": "right-front",
+      "beatIndex": 89,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0091",
+      "timestamp": 56.56381,
+      "targetZone": "left-back",
+      "beatIndex": 90,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0092",
+      "timestamp": 57.190748,
+      "targetZone": "right-back",
+      "beatIndex": 91,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0093",
+      "timestamp": 57.794467,
+      "targetZone": "left-front",
+      "beatIndex": 92,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0095",
+      "timestamp": 59.025125,
+      "targetZone": "right-front",
+      "beatIndex": 94,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0096",
+      "timestamp": 59.628844,
+      "targetZone": "left-front",
+      "beatIndex": 95,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0097",
+      "timestamp": 60.255782,
+      "targetZone": "right-back",
+      "beatIndex": 96,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0099",
+      "timestamp": 61.46322,
+      "targetZone": "left-back",
+      "beatIndex": 98,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0100",
+      "timestamp": 62.090159,
+      "targetZone": "right-front",
+      "beatIndex": 99,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0101",
+      "timestamp": 62.693878,
+      "targetZone": "left-front",
+      "beatIndex": 100,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0102",
+      "timestamp": 63.297596,
+      "targetZone": "right-back",
+      "beatIndex": 101,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0104",
+      "timestamp": 64.505034,
+      "targetZone": "left-front",
+      "beatIndex": 103,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0105",
+      "timestamp": 65.131973,
+      "targetZone": "right-front",
+      "beatIndex": 104,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0106",
+      "timestamp": 65.758912,
+      "targetZone": "left-back",
+      "beatIndex": 105,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0107",
+      "timestamp": 66.36263,
+      "targetZone": "right-back",
+      "beatIndex": 106,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0109",
+      "timestamp": 67.593288,
+      "targetZone": "left-front",
+      "beatIndex": 108,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0110",
+      "timestamp": 68.197007,
+      "targetZone": "right-front",
+      "beatIndex": 109,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0111",
+      "timestamp": 68.823946,
+      "targetZone": "left-front",
+      "beatIndex": 110,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0113",
+      "timestamp": 70.054603,
+      "targetZone": "right-back",
+      "beatIndex": 112,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0114",
+      "timestamp": 70.658322,
+      "targetZone": "left-back",
+      "beatIndex": 113,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0115",
+      "timestamp": 71.285261,
+      "targetZone": "right-front",
+      "beatIndex": 114,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0116",
+      "timestamp": 71.88898,
+      "targetZone": "left-front",
+      "beatIndex": 115,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0118",
+      "timestamp": 73.073197,
+      "targetZone": "right-back",
+      "beatIndex": 117,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0119",
+      "timestamp": 73.630476,
+      "targetZone": "left-front",
+      "beatIndex": 118,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0120",
+      "timestamp": 74.257415,
+      "targetZone": "right-front",
+      "beatIndex": 119,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0121",
+      "timestamp": 74.861134,
+      "targetZone": "left-back",
+      "beatIndex": 120,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0123",
+      "timestamp": 76.184671,
+      "targetZone": "right-back",
+      "beatIndex": 122,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0124",
+      "timestamp": 76.78839,
+      "targetZone": "left-front",
+      "beatIndex": 123,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0125",
+      "timestamp": 77.392109,
+      "targetZone": "right-back",
+      "beatIndex": 124,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0127",
+      "timestamp": 78.622766,
+      "targetZone": "right-front",
+      "beatIndex": 126,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0128",
+      "timestamp": 79.226485,
+      "targetZone": "left-back",
+      "beatIndex": 127,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0129",
+      "timestamp": 79.830204,
+      "targetZone": "right-back",
+      "beatIndex": 128,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0130",
+      "timestamp": 80.457143,
+      "targetZone": "left-front",
+      "beatIndex": 129,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0132",
+      "timestamp": 81.66458,
+      "targetZone": "right-front",
+      "beatIndex": 131,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0133",
+      "timestamp": 82.198639,
+      "targetZone": "left-back",
+      "beatIndex": 132,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0134",
+      "timestamp": 82.755918,
+      "targetZone": "right-front",
+      "beatIndex": 133,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0135",
+      "timestamp": 83.359637,
+      "targetZone": "left-front",
+      "beatIndex": 134,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0137",
+      "timestamp": 84.659955,
+      "targetZone": "right-back",
+      "beatIndex": 136,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0138",
+      "timestamp": 85.286893,
+      "targetZone": "left-front",
+      "beatIndex": 137,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0139",
+      "timestamp": 85.960272,
+      "targetZone": "right-front",
+      "beatIndex": 138,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0141",
+      "timestamp": 87.19093,
+      "targetZone": "left-back",
+      "beatIndex": 140,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0142",
+      "timestamp": 87.817868,
+      "targetZone": "right-back",
+      "beatIndex": 141,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0143",
+      "timestamp": 88.421587,
+      "targetZone": "left-front",
+      "beatIndex": 142,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0144",
+      "timestamp": 89.025306,
+      "targetZone": "right-back",
+      "beatIndex": 143,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0146",
+      "timestamp": 90.255964,
+      "targetZone": "left-back",
+      "beatIndex": 145,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0147",
+      "timestamp": 90.859683,
+      "targetZone": "right-front",
+      "beatIndex": 146,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0148",
+      "timestamp": 91.463401,
+      "targetZone": "left-front",
+      "beatIndex": 147,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0149",
+      "timestamp": 92.09034,
+      "targetZone": "right-front",
+      "beatIndex": 148,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0151",
+      "timestamp": 93.320998,
+      "targetZone": "left-back",
+      "beatIndex": 150,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0152",
+      "timestamp": 93.924717,
+      "targetZone": "right-back",
+      "beatIndex": 151,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0153",
+      "timestamp": 94.528435,
+      "targetZone": "left-front",
+      "beatIndex": 152,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0155",
+      "timestamp": 95.735873,
+      "targetZone": "right-front",
+      "beatIndex": 154,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0156",
+      "timestamp": 96.362812,
+      "targetZone": "left-back",
+      "beatIndex": 155,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0157",
+      "timestamp": 96.989751,
+      "targetZone": "right-front",
+      "beatIndex": 156,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0158",
+      "timestamp": 97.593469,
+      "targetZone": "left-front",
+      "beatIndex": 157,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0160",
+      "timestamp": 98.824127,
+      "targetZone": "right-back",
+      "beatIndex": 159,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0161",
+      "timestamp": 99.427846,
+      "targetZone": "left-front",
+      "beatIndex": 160,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0162",
+      "timestamp": 100.054785,
+      "targetZone": "right-front",
+      "beatIndex": 161,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0163",
+      "timestamp": 100.658503,
+      "targetZone": "left-back",
+      "beatIndex": 162,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0165",
+      "timestamp": 101.889161,
+      "targetZone": "right-front",
+      "beatIndex": 164,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0166",
+      "timestamp": 102.49288,
+      "targetZone": "left-front",
+      "beatIndex": 165,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0167",
+      "timestamp": 103.096599,
+      "targetZone": "right-front",
+      "beatIndex": 166,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0169",
+      "timestamp": 104.327256,
+      "targetZone": "left-back",
+      "beatIndex": 168,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0170",
+      "timestamp": 104.930975,
+      "targetZone": "right-back",
+      "beatIndex": 169,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0171",
+      "timestamp": 105.534694,
+      "targetZone": "left-back",
+      "beatIndex": 170,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0172",
+      "timestamp": 106.161633,
+      "targetZone": "right-front",
+      "beatIndex": 171,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0174",
+      "timestamp": 107.39229,
+      "targetZone": "left-front",
+      "beatIndex": 173,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0175",
+      "timestamp": 107.996009,
+      "targetZone": "right-back",
+      "beatIndex": 174,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0176",
+      "timestamp": 108.622948,
+      "targetZone": "left-back",
+      "beatIndex": 175,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0177",
+      "timestamp": 109.226667,
+      "targetZone": "right-front",
+      "beatIndex": 176,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0179",
+      "timestamp": 110.457324,
+      "targetZone": "left-back",
+      "beatIndex": 178,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0180",
+      "timestamp": 111.061043,
+      "targetZone": "right-back",
+      "beatIndex": 179,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0181",
+      "timestamp": 111.664762,
+      "targetZone": "left-front",
+      "beatIndex": 180,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0183",
+      "timestamp": 112.89542,
+      "targetZone": "right-back",
+      "beatIndex": 182,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0184",
+      "timestamp": 113.499138,
+      "targetZone": "left-back",
+      "beatIndex": 183,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0185",
+      "timestamp": 114.126077,
+      "targetZone": "right-front",
+      "beatIndex": 184,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0186",
+      "timestamp": 114.729796,
+      "targetZone": "left-front",
+      "beatIndex": 185,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0188",
+      "timestamp": 115.960454,
+      "targetZone": "right-back",
+      "beatIndex": 187,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0189",
+      "timestamp": 116.564172,
+      "targetZone": "left-front",
+      "beatIndex": 188,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0190",
+      "timestamp": 117.191111,
+      "targetZone": "right-front",
+      "beatIndex": 189,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0191",
+      "timestamp": 117.77161,
+      "targetZone": "left-back",
+      "beatIndex": 190,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0193",
+      "timestamp": 119.025488,
+      "targetZone": "right-front",
+      "beatIndex": 192,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0194",
+      "timestamp": 119.629206,
+      "targetZone": "left-front",
+      "beatIndex": 193,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0195",
+      "timestamp": 120.256145,
+      "targetZone": "right-front",
+      "beatIndex": 194,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0197",
+      "timestamp": 121.463583,
+      "targetZone": "left-back",
+      "beatIndex": 196,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0198",
+      "timestamp": 122.090522,
+      "targetZone": "right-back",
+      "beatIndex": 197,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0199",
+      "timestamp": 122.69424,
+      "targetZone": "left-front",
+      "beatIndex": 198,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0200",
+      "timestamp": 123.297959,
+      "targetZone": "right-front",
+      "beatIndex": 199,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0202",
+      "timestamp": 124.528617,
+      "targetZone": "left-back",
+      "beatIndex": 201,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0203",
+      "timestamp": 125.155556,
+      "targetZone": "right-front",
+      "beatIndex": 202,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0204",
+      "timestamp": 125.759274,
+      "targetZone": "left-front",
+      "beatIndex": 203,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0205",
+      "timestamp": 126.362993,
+      "targetZone": "right-back",
+      "beatIndex": 204,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0207",
+      "timestamp": 127.593651,
+      "targetZone": "left-back",
+      "beatIndex": 206,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0208",
+      "timestamp": 128.19737,
+      "targetZone": "right-front",
+      "beatIndex": 207,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0209",
+      "timestamp": 128.824308,
+      "targetZone": "left-front",
+      "beatIndex": 208,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0211",
+      "timestamp": 130.031746,
+      "targetZone": "right-front",
+      "beatIndex": 210,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0212",
+      "timestamp": 130.658685,
+      "targetZone": "left-back",
+      "beatIndex": 211,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0213",
+      "timestamp": 131.262404,
+      "targetZone": "right-back",
+      "beatIndex": 212,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0214",
+      "timestamp": 131.889342,
+      "targetZone": "left-front",
+      "beatIndex": 213,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0216",
+      "timestamp": 133.09678,
+      "targetZone": "right-front",
+      "beatIndex": 215,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0217",
+      "timestamp": 133.723719,
+      "targetZone": "left-back",
+      "beatIndex": 216,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0218",
+      "timestamp": 134.327438,
+      "targetZone": "right-front",
+      "beatIndex": 217,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0219",
+      "timestamp": 134.954376,
+      "targetZone": "left-front",
+      "beatIndex": 218,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0221",
+      "timestamp": 136.161814,
+      "targetZone": "right-back",
+      "beatIndex": 220,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0222",
+      "timestamp": 136.788753,
+      "targetZone": "left-back",
+      "beatIndex": 221,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0223",
+      "timestamp": 137.392472,
+      "targetZone": "right-front",
+      "beatIndex": 222,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0225",
+      "timestamp": 138.623129,
+      "targetZone": "left-back",
+      "beatIndex": 224,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0226",
+      "timestamp": 139.226848,
+      "targetZone": "right-back",
+      "beatIndex": 225,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0227",
+      "timestamp": 139.830567,
+      "targetZone": "left-front",
+      "beatIndex": 226,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0228",
+      "timestamp": 140.457506,
+      "targetZone": "right-back",
+      "beatIndex": 227,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0230",
+      "timestamp": 141.664943,
+      "targetZone": "right-front",
+      "beatIndex": 229,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0231",
+      "timestamp": 142.291882,
+      "targetZone": "left-front",
+      "beatIndex": 230,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0232",
+      "timestamp": 142.895601,
+      "targetZone": "right-back",
+      "beatIndex": 231,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0233",
+      "timestamp": 143.52254,
+      "targetZone": "left-back",
+      "beatIndex": 232,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0235",
+      "timestamp": 144.729977,
+      "targetZone": "right-front",
+      "beatIndex": 234,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0236",
+      "timestamp": 145.356916,
+      "targetZone": "left-front",
+      "beatIndex": 235,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0237",
+      "timestamp": 145.960635,
+      "targetZone": "right-front",
+      "beatIndex": 236,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0239",
+      "timestamp": 147.168073,
+      "targetZone": "left-back",
+      "beatIndex": 238,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0240",
+      "timestamp": 147.795011,
+      "targetZone": "right-back",
+      "beatIndex": 239,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0241",
+      "timestamp": 148.42195,
+      "targetZone": "left-front",
+      "beatIndex": 240,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0242",
+      "timestamp": 149.025669,
+      "targetZone": "right-front",
+      "beatIndex": 241,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0244",
+      "timestamp": 150.256327,
+      "targetZone": "left-back",
+      "beatIndex": 243,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0245",
+      "timestamp": 150.883265,
+      "targetZone": "right-front",
+      "beatIndex": 244,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0246",
+      "timestamp": 151.486984,
+      "targetZone": "left-front",
+      "beatIndex": 245,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0247",
+      "timestamp": 152.090703,
+      "targetZone": "right-back",
+      "beatIndex": 246,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0249",
+      "timestamp": 153.321361,
+      "targetZone": "left-back",
+      "beatIndex": 248,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0250",
+      "timestamp": 153.925079,
+      "targetZone": "right-front",
+      "beatIndex": 249,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0251",
+      "timestamp": 154.528798,
+      "targetZone": "left-front",
+      "beatIndex": 250,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0253",
+      "timestamp": 155.759456,
+      "targetZone": "right-front",
+      "beatIndex": 252,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0254",
+      "timestamp": 156.363175,
+      "targetZone": "left-back",
+      "beatIndex": 253,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0255",
+      "timestamp": 156.990113,
+      "targetZone": "right-back",
+      "beatIndex": 254,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0256",
+      "timestamp": 157.593832,
+      "targetZone": "left-front",
+      "beatIndex": 255,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0258",
+      "timestamp": 158.82449,
+      "targetZone": "right-front",
+      "beatIndex": 257,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0259",
+      "timestamp": 159.451429,
+      "targetZone": "left-back",
+      "beatIndex": 258,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0260",
+      "timestamp": 160.055147,
+      "targetZone": "right-front",
+      "beatIndex": 259,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0261",
+      "timestamp": 160.658866,
+      "targetZone": "left-front",
+      "beatIndex": 260,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0263",
+      "timestamp": 161.866304,
+      "targetZone": "right-back",
+      "beatIndex": 262,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0264",
+      "timestamp": 162.493243,
+      "targetZone": "left-back",
+      "beatIndex": 263,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0265",
+      "timestamp": 163.120181,
+      "targetZone": "right-front",
+      "beatIndex": 264,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0267",
+      "timestamp": 164.327619,
+      "targetZone": "left-back",
+      "beatIndex": 266,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0268",
+      "timestamp": 164.931338,
+      "targetZone": "right-back",
+      "beatIndex": 267,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0269",
+      "timestamp": 165.558277,
+      "targetZone": "left-front",
+      "beatIndex": 268,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0270",
+      "timestamp": 166.161995,
+      "targetZone": "right-back",
+      "beatIndex": 269,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0272",
+      "timestamp": 167.392653,
+      "targetZone": "left-back",
+      "beatIndex": 271,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0273",
+      "timestamp": 167.996372,
+      "targetZone": "right-front",
+      "beatIndex": 272,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0274",
+      "timestamp": 168.623311,
+      "targetZone": "left-back",
+      "beatIndex": 273,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0275",
+      "timestamp": 169.227029,
+      "targetZone": "right-back",
+      "beatIndex": 274,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0277",
+      "timestamp": 170.457687,
+      "targetZone": "left-back",
+      "beatIndex": 276,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0278",
+      "timestamp": 171.061406,
+      "targetZone": "right-front",
+      "beatIndex": 277,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0279",
+      "timestamp": 171.665125,
+      "targetZone": "left-front",
+      "beatIndex": 278,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0281",
+      "timestamp": 172.895782,
+      "targetZone": "right-back",
+      "beatIndex": 280,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0282",
+      "timestamp": 173.522721,
+      "targetZone": "left-back",
+      "beatIndex": 281,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0283",
+      "timestamp": 174.12644,
+      "targetZone": "right-front",
+      "beatIndex": 282,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0284",
+      "timestamp": 174.730159,
+      "targetZone": "left-back",
+      "beatIndex": 283,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0286",
+      "timestamp": 175.960816,
+      "targetZone": "right-back",
+      "beatIndex": 285,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0287",
+      "timestamp": 176.564535,
+      "targetZone": "left-front",
+      "beatIndex": 286,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0288",
+      "timestamp": 177.191474,
+      "targetZone": "right-front",
+      "beatIndex": 287,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0289",
+      "timestamp": 177.795193,
+      "targetZone": "left-back",
+      "beatIndex": 288,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0291",
+      "timestamp": 179.02585,
+      "targetZone": "right-front",
+      "beatIndex": 290,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0292",
+      "timestamp": 179.629569,
+      "targetZone": "left-front",
+      "beatIndex": 291,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0293",
+      "timestamp": 180.256508,
+      "targetZone": "right-back",
+      "beatIndex": 292,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0295",
+      "timestamp": 181.463946,
+      "targetZone": "left-back",
+      "beatIndex": 294,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0296",
+      "timestamp": 182.090884,
+      "targetZone": "right-front",
+      "beatIndex": 295,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0297",
+      "timestamp": 182.694603,
+      "targetZone": "left-front",
+      "beatIndex": 296,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0298",
+      "timestamp": 183.321542,
+      "targetZone": "right-front",
+      "beatIndex": 297,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0300",
+      "timestamp": 184.52898,
+      "targetZone": "left-back",
+      "beatIndex": 299,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0301",
+      "timestamp": 185.109478,
+      "targetZone": "right-back",
+      "beatIndex": 300,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0302",
+      "timestamp": 185.759637,
+      "targetZone": "left-front",
+      "beatIndex": 301,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0303",
+      "timestamp": 186.363356,
+      "targetZone": "right-front",
+      "beatIndex": 302,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0305",
+      "timestamp": 187.594014,
+      "targetZone": "left-back",
+      "beatIndex": 304,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0306",
+      "timestamp": 188.220952,
+      "targetZone": "right-front",
+      "beatIndex": 305,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0307",
+      "timestamp": 188.824671,
+      "targetZone": "left-front",
+      "beatIndex": 306,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0309",
+      "timestamp": 190.055329,
+      "targetZone": "right-back",
+      "beatIndex": 308,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0310",
+      "timestamp": 190.659048,
+      "targetZone": "left-front",
+      "beatIndex": 309,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0311",
+      "timestamp": 191.262766,
+      "targetZone": "right-front",
+      "beatIndex": 310,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0312",
+      "timestamp": 191.889705,
+      "targetZone": "left-back",
+      "beatIndex": 311,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0314",
+      "timestamp": 193.097143,
+      "targetZone": "right-front",
+      "beatIndex": 313,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0315",
+      "timestamp": 193.724082,
+      "targetZone": "left-front",
+      "beatIndex": 314,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0316",
+      "timestamp": 194.3278,
+      "targetZone": "right-front",
+      "beatIndex": 315,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0317",
+      "timestamp": 194.931519,
+      "targetZone": "left-back",
+      "beatIndex": 316,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0319",
+      "timestamp": 196.162177,
+      "targetZone": "right-back",
+      "beatIndex": 318,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0320",
+      "timestamp": 196.789116,
+      "targetZone": "left-back",
+      "beatIndex": 319,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0321",
+      "timestamp": 197.392834,
+      "targetZone": "right-front",
+      "beatIndex": 320,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0323",
+      "timestamp": 198.623492,
+      "targetZone": "left-front",
+      "beatIndex": 322,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0324",
+      "timestamp": 199.227211,
+      "targetZone": "right-back",
+      "beatIndex": 323,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0325",
+      "timestamp": 199.83093,
+      "targetZone": "left-back",
+      "beatIndex": 324,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0326",
+      "timestamp": 200.457868,
+      "targetZone": "right-front",
+      "beatIndex": 325,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0328",
+      "timestamp": 201.688526,
+      "targetZone": "left-back",
+      "beatIndex": 327,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0329",
+      "timestamp": 202.292245,
+      "targetZone": "right-back",
+      "beatIndex": 328,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0330",
+      "timestamp": 202.895964,
+      "targetZone": "left-front",
+      "beatIndex": 329,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0331",
+      "timestamp": 203.499683,
+      "targetZone": "right-front",
+      "beatIndex": 330,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0333",
+      "timestamp": 204.70712,
+      "targetZone": "left-back",
+      "beatIndex": 332,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0334",
+      "timestamp": 205.357279,
+      "targetZone": "right-back",
+      "beatIndex": 333,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0335",
+      "timestamp": 205.960998,
+      "targetZone": "left-back",
+      "beatIndex": 334,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0337",
+      "timestamp": 207.168435,
+      "targetZone": "right-front",
+      "beatIndex": 336,
+      "difficulty": "easy"
+    },
+    {
+      "id": "step-0338",
+      "timestamp": 207.772154,
+      "targetZone": "left-front",
+      "beatIndex": 337,
+      "difficulty": "easy"
+    }
+  ],
+  "movementCount": 266,
+  "restBeatCount": 72,
+  "warnings": []
+}

@@ -7,6 +7,7 @@ from typing import Any, Dict, List, Optional
 from fastapi import FastAPI, File, HTTPException, UploadFile
 from pydantic import BaseModel
 from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
 from starlette.concurrency import run_in_threadpool
 
 from .analysis import ANALYSIS_METHOD, AudioDecodeError, analyze_file
@@ -97,6 +98,15 @@ async def analyse(file: UploadFile = File(...)):
         raise HTTPException(status_code=500, detail="The uploaded file could not be prepared for analysis.") from exc
     finally:
         await file.close()
+
+
+@app.get("/bench/{bench_id}", include_in_schema=False)
+async def bench_application(bench_id: str):
+    """Serve the SPA for permanent QR routes so direct scans and refreshes work."""
+    index_file = frontend_dist / "index.html"
+    if not index_file.is_file():
+        raise HTTPException(status_code=404, detail="The FOOTBEAT frontend has not been built.")
+    return FileResponse(index_file)
 
 
 # In production the frontend is built into the project-level dist/ directory.
